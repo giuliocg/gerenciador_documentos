@@ -1,0 +1,112 @@
+:root {
+  --fonte: "Montserrat", sans-serif;
+  --background-geral: #111c2f;
+  --font-color: #ffffff;
+  --font-titulo: #ffffff;
+  --background-caixa: #8293b9;
+  --background-botao: #10325c;
+  --background-botao-hover: #170b2d;
+}
+
+* {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background-geral);
+  color: var(--font-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-caixa);
+  border-radius: 8px;
+  width: max-content;
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+}
+
+.titulo__caixa {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--font-titulo);
+  text-transform: uppercase;
+}
+
+.info__documento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+
+.nome {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: none;
+  background-color: var(--background-caixa);
+  color: var(--font-color);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--background-botao);
+}
+
+.date,
+.localizacao,
+.categoria,
+.arquivo {
+  margin-bottom: 1em;
+  border: none;
+  background-color: var(--background-caixa);
+  color: var(--font-color);
+}
+
+.localizacao,
+.categoria {
+  border-bottom: 1px solid var(--background-botao);
+  padding-bottom: 6px;
+}
+
+.botao__cadastro {
+  border: none;
+  background-color: var(--background-botao);
+  color: var(--font-color);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.botao__cadastro:hover {
+  color: var(--background-botao-hover);
+}
+
+.coluna__arquivos {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.table {
+  margin-top: 24px;
+}
+
+.arquivos {
+  width: max-content;
+}
+
+.modal-body p {
+  color: var(--background-botao-hover);
+}
+
+.close {
+  width: 20%;
+  background-color: var(--font-color);
+}
